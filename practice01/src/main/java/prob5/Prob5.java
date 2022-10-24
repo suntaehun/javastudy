@@ -4,7 +4,7 @@ public class Prob5 {
 
 	public static void main(String[] args) {
 
-		for (int i = 1; i < 100; i++) {
+		for (int i = 1; i < 37; i++) {
 			String number = String.valueOf(i);
 			int count = 0;
 
@@ -19,7 +19,7 @@ public class Prob5 {
 					}
 					System.out.println();
 					
-					
+					break;
 				}
 
 			}
