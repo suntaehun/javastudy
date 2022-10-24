@@ -7,11 +7,11 @@ public class Ex32Array {
 //		int[10] a1;
 		
 		
-		int[] a2 = new int[5];	// 비추
+		int[] a2 = new int[5];	// 개추
 		System.out.println(a2.length);
 		
 		
-		int a3[] = new int[5];	// 개추
+		int a3[] = new int[5];	// 비추
 		System.out.println(a3.length);
 		
 		// 초기화 1
