@@ -1,10 +1,16 @@
 package chapter03;
 
 public class Goods {
+	public static int countOfGoods = 0;
+	
 	private String name;
 	private int price;
 	private int countStock;
 	private int countSold;
+	
+	public Goods() {
+		countOfGoods++;
+	}
 	
 	public String getName() {
 		return name;
@@ -19,6 +25,9 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
+		if(price < 0) {
+			price = 0;
+		}
 		this.price = price;
 	}
 
@@ -37,8 +46,13 @@ public class Goods {
 	public void setCountSold(int countSold) {
 		this.countSold = countSold;
 	}
+	
+	public void showInfo() {
+		System.out.println("Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold + "]");
+		
+	}
 
-	public String toString() {
-		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold + "]";
+	public int calcDiscountPrice(double discountRate) {
+		return (int)(price * discountRate);
 	}
 }
