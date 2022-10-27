@@ -5,8 +5,8 @@ public class Song {
 	private String artist;
 	private String album;
 	private String composer;
-	int year;
-	int track;
+	private int year;
+	private int track;
 	
 	public Song() {
 		
