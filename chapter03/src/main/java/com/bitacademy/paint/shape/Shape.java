@@ -1,6 +1,8 @@
-package paint;
+package com.bitacademy.paint.shape;
 
-public abstract class Shape {
+import com.bitacademy.paint.i.Drawable;
+
+public abstract class Shape implements Drawable {
 	private String lineColor;
 	private String fillColor;
 	
@@ -16,6 +18,4 @@ public abstract class Shape {
 	public void setFillColor(String fillColor) {
 		this.fillColor = fillColor;
 	}
-	
-	public abstract void draw();
 }

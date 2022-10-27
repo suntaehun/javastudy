@@ -6,7 +6,7 @@ public class StringUtilTest {
         String[] strArr = {"SuperMan", "BatMan", "SpiderMan"}; 
         String result = StringUtil.concatenate(strArr);
 
-        System.out.println( "결과 문자열 : " + result ); 
+        System.out.println("결과 문자열 : " + result); 
 	}
 
 }

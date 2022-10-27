@@ -1,10 +1,13 @@
 package prob04;
 
 public class StringUtil {
+	private static String result ="";
 
 	public static String concatenate(String[] str) {
-		// TODO Auto-generated method stub
-		return null;
+
+		for (int i = 0; i < str.length; i++) {
+			result += str[i];
+		}
+		return result;
 	}
 }
-qwe
