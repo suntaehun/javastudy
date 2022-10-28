@@ -6,8 +6,10 @@ public abstract class Bird {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public abstract void fly();
+	public abstract void sing();
 }
