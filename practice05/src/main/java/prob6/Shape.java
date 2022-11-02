@@ -2,8 +2,9 @@ package prob6;
 
 public abstract class Shape {
 
-	protected abstract String getArea();
+	protected abstract double getArea();
 
-	protected abstract String getPerimeter();
+	protected abstract double getPerimeter();
+
 
 }
